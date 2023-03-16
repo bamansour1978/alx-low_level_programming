@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- *My first programme C
+ *main - My first programme C
  *Return: 0
 */
 int main(void)
