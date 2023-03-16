@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- *main - My first programme C
+ *main - this is the function main
  *Return: 0
 */
 int main(void)
