@@ -21,5 +21,4 @@ else
 {
 printf("%d is zero\n", i);
 }
-return;
 }
