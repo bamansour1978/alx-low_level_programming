@@ -19,9 +19,7 @@ You can only use _putchar three times in your code
 Write a function that multiplies two integers.
 
 Prototype: int mul(int a, int b);
-
-##  3. The numbers speak for themselves
-
+## 3. The numbers speak for themselves
 Write a function that prints the numbers, from 0 to 9, followed by a new line.
 
 Prototype: void print_numbers(void);
