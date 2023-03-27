@@ -17,4 +17,4 @@ int _atoi(char *s);
 
 
 
-#endif
+#endif /*MAIN_H*/
