@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
+   * main - check the code
+    *
+     * Return: Always 0.
+      */
 int main(void)
 {
 	char s1[98];
@@ -28,13 +28,14 @@ int main(void)
 	{
 		if (i % 10)
 		{
-		printf(" ");
+			printf(" ");
 		}
 		if (!(i % 10) && i)
 		{
-		printf("\n");
+			printf("\n");
 		}
-	printf("0x%02x", s1[i]);
+		printf("0x%02x", s1[i]);
 	}
 	printf("\n");
+	return (0);
 }
