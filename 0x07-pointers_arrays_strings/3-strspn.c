@@ -7,20 +7,28 @@
  *
  * @accept: input bytes
  *
- * Return: jtr unsigned int
+ * Return:  unsigned int
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int jtr, ntr;
+	unsigned int a, b, c;
 
-	for (jtr = 0; s[jtr] != '\0'; jtr++)
+	c = 0;
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		for (ntr = 0; accept[ntr] != s[ntr]; ntr++)
+
+		for (b = 0; accept[b] != '\0'; b++)
 		{
-			if (accept[ntr] == '\0')
-				return (jtr);
+			if (s[a] == accept[b])
+			{
+				c++;
+				break;
+			}
 		}
+		if (accept[b] == '\0')
+			break;
+
 	}
-	return (jtr);
+	return (c);
 }
