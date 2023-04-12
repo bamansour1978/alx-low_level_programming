@@ -26,11 +26,9 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	else
-	{
-		for (i = 0; i < size; i++)
-			ar[i] = str[i];
-	}
+	for (i = 0; i < size; i++)
+		ar[i] = str[i];
+
+	ar[size] = '\0';
 	return (ar);
-	free(ar);
 }
