@@ -26,10 +26,8 @@ char *str_concat(char *s1, char *s2)
 	ar = malloc(len * sizeof(char));
 	if (ar == NULL)
 		return (NULL);
-
-
 	for (index = 0; s1[index]; index++)
-			ar[ar_index++] = s1[index];
+		ar[ar_index++] = s1[index];
 
 	for (index = 0; s2[index]; index++)
 		ar[ar_index++] = s2[index];
