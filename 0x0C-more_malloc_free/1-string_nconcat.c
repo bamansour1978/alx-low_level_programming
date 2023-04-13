@@ -15,12 +15,29 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ar;
 	unsigned int x, y, z;
-	
-	x = (s1 == NULL) ? 0 : ( s1[0] + 1);
-	
-	y = (s2 == NULL) ? 0 : ( s1[0] + 1);
 
-	if ( y > n)
+	if (s1 == NULL)
+	{
+		x = 0;
+	}
+	else
+	{
+		for (x = 0; s1[x]; ++x)
+			;
+
+	}
+
+	if (s2 == NULL)
+	{
+		y = 0;
+	}
+	else
+	{
+		for (y = 0; s2[y]; ++y)
+			;
+	}
+
+	if (y > n)
 		y = n;
 
 	ar = malloc(sizeof(char) * (x + y + 1));
@@ -36,5 +53,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	ar[x + y] = '\0';
 	return (ar);
-
 }
