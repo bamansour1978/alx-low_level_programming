@@ -29,14 +29,12 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-
-	i = 0;
-	while (i < number_of_bytes)
+	for (i = 0;  < number_of_bytes; i++)
 	{
 		printf("%02x", opc_codes[i] & 0xFF);
 		if (i != number_of_bytes - 1)
 			printf(" ");
-		i++;
+	
 	}
 
 	printf("\n");
