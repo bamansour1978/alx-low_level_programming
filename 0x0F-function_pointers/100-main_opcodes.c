@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	
+
 	i = 0;
 	while (i < number_of_bytes)
 	{
@@ -42,5 +42,3 @@ int main(int argc, char *argv[])
 	printf("\n");
 	return (0);
 }
-
-
