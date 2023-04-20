@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < number_of_bytes; i++)
 	{
-		printf("%02x", opc_codes[i] & 0x0F);
+		printf("%02x", opc_codes[i] & 0xFF);
 		if (i != number_of_bytes - 1)
 			printf(" ");
 	}
