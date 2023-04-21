@@ -63,8 +63,8 @@ void print_string(va_list arg)
 		printf("(nil)");
 		return;
 	}
-	else
-		printf("%s", str);
+
+	printf("%s", str);
 }
 
 /**
