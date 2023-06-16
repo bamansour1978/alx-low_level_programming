@@ -5,7 +5,8 @@
  *
  * Return: exit_success
  */
-void main()
+int main(void)
 {
-	print("test");
+	printf("test\n");
+	return (0);
 }
